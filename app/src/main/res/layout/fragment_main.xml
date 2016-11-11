@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+            android:drawableTop="@mipmap/tab_home_normal"
+            android:id="@+id/tab_one" />
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawableTop="@mipmap/tab_class_normal"
+            android:id="@+id/tab_two" />
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawableTop="@mipmap/tab_shopping_normal"
+            android:id="@+id/tab_three" />
+        <RadioButton
+            style="@style/MTabStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawableTop="@mipmap/tab_myebuy_normal"
+            android:id="@+id/tab_four" />
+    </RadioGroup>
+
+</LinearLayout>
